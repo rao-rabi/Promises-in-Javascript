@@ -2,8 +2,8 @@
 
 let promise2 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log("This is promise chaining(First Promise)"), 1000
-    })
+        console.log("This is promise chaining(First Promise)")
+    }, 1000)
     resolve(22)
 })
 
@@ -11,8 +11,8 @@ promise2.then((value) => {
     console.log(value);
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("This is second promise"), 8000
-        })
+            console.log("This is second promise")
+        }, 8000)
         resolve(52)
     }).then((value) => {
         console.log(value);

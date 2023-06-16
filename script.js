@@ -1,6 +1,6 @@
 let promise = new Promise((resolve, reject) => {
     setTimeout(()=>{
-        console.log("Hello! i am a resolved promise"), 3000})
+        console.log("Hello! i am a resolved promise")}, 3000)
     resolve(56);
     // reject(new Error("Error in p1"))
 });
