@@ -1,3 +1,4 @@
+//Promise API all six methods
 let p1 = new Promise((resolve, reject) => {
     setTimeout(()=>{
         resolve(21)
